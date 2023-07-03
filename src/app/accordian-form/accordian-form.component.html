@@ -1,0 +1,12 @@
+<form #form="ngForm" (ngSubmit)="onSubmit()">
+    <h1>Add section</h1>
+    <div class="form-group mb-3 ">
+        <label for="sectionHeader" class="form-label">Section Header</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="section heading" ngModel name="accotitle">
+      </div>
+      <div class="form-group mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Section Content</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" ngModel placeholder="Enter Section Content" name="accoDesc"></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit">Add</button>
+</form>
